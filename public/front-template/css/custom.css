@@ -1,0 +1,101 @@
+.menu-mobile__button-burger,
+.menu-mobile__button-enquiry,
+.block-lodge-activity-overview .button-outline,
+.block-lodge-activity-overview .highlighted-example-trip__price-label,
+.block-lodge-activity-overview .highlighted-example-trip__price-value.pricing,
+.menu-desktop__button-list, .dropdown__button, .menu_btn {
+    color: #000000 !important;
+}
+
+.button-burger svg {
+    fill: #000000;
+}
+
+.menu-icon__line {
+    background-color: #000000;
+}
+
+.menu-desktop .button-outline {
+    color: #000000 !important;
+}
+
+.menu-desktop .button-outline::before {
+    border: 1.5px solid #000 !important;
+    z-index: 0 !important;
+}
+
+.menu_btn svg {
+    fill: #000 !important;
+}
+
+
+
+.page-titles {
+    display: none;
+}
+
+.profile {
+    margin-top: 10em;
+}
+
+.card {
+    margin-bottom: 1.875rem;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border: 0px solid transparent;
+    border-radius: 1.75rem;
+    box-shadow: 0px 5px 5px 0px rgba(82, 63, 105, 0.05);
+    /* height: calc(100% - 30px); */
+    height: auto;
+}
+
+.btn-dark {
+    background: #6e6e6e;
+    border-color: #6e6e6e;
+    color: #fff;
+}
+
+.btn-warning {
+    color: #000;
+    background-color: #ffa755;
+    border-color: #ffa755;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+    font-size: 0.813rem !important;
+    padding: 0.625rem 1rem;
+}
+
+.btn {
+    padding: 0.938rem 1.5rem;
+    border-radius: 1.5625rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.form-control {
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    padding: 5px 20px;
+    color: #6e6e6e;
+    height: 56px;
+    border-radius: 1rem;
+}
+
+.menu-container {
+    border: 1px solid #000 !important;
+}
+
+.menu-container .menu-button {
+    color: #000 !important;
+}
+
+.menu-button {
+    color: #000;
+}
+
+.goog-te-gadget-simple {
+    background-color: rgba(0,0,0,0.8)!important;
+    border: 3px solid rgba(0,0,0,0.50) !important;
+}

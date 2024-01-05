@@ -1,0 +1,10 @@
+<div class="inline-flex">
+    <div class="form-check mr-3">
+        <input class="form-check-input" name="%%itemName%%" type="radio" value="1" {{ (isset($%%crudNameSingular%%) && 1 == $%%crudNameSingular%%->%%itemName%%) ? 'checked' : '' }}>
+        <label class="form-check-label"> Sí</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" name="%%itemName%%" type="radio" value="0" @if (isset($%%crudNameSingular%%)) {{ (0 == $%%crudNameSingular%%->%%itemName%%) ? 'checked' : '' }} @else {{ 'checked' }} @endif>
+        <label class="form-check-label"> No</label>
+    </div>
+</div>

@@ -1,0 +1,103 @@
+.list-highlights__list {
+    border-top: none !important;
+}
+.highlighted-example-trip__price-label, .highlighted-example-trip__price-value {
+    color: #000 !important;
+}
+.block-lodge-activity-overview__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: .5rem;
+    align-items: flex-start;
+}
+.activity-lodge__heading {
+    margin-top: 0 !important;
+}
+
+#container {
+	background-color: #ffffff;
+	border-radius: 1rem;
+	box-shadow: 30px 30px 40px 0px #c3c3c3;
+	max-width: 40rem;
+	margin: 5rem auto;
+	padding: 2rem 3rem;
+}
+#container > h2 {
+  display: block;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 1.5rem auto 0;
+	text-align: center;
+}
+#container > p {
+	font-size: 0.8rem;
+	margin: 1rem 0 2.5rem 0;
+	text-align: center;
+}
+/*style component*/
+.nav-tab {}
+.nav-tab ul {
+  list-style: none;
+  font-size: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  align-items: center;
+  grid-gap: 0;
+}
+.nav-tab ul li {
+  text-align: center;
+}
+.nav-tab ul li button {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #ececec;
+  color: #797979;
+  height: 5rem;
+  outline: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.12s;
+  width: 100%;
+  font-family: "Wulkan Display Medium", serif;
+  padding-bottom: 4rem;
+}
+.nav-tab ul li button.tab-current,
+.nav-tab ul li button:hover {
+  border-bottom: 1px solid #fd8b20;
+  color: #fd8b20;
+  /* padding-bottom: 1.5rem; */
+  position: relative;
+}
+.nav-tab ul li button.tab-current object, .nav-tab ul li button:hover {
+    filter: invert(60%) sepia(70%) saturate(4013%) hue-rotate(3deg) brightness(93%) contrast(127%);
+}
+.content-tab {
+  display: none;
+  padding: 3rem 0;
+  animation: fadeIn 0.15s linear;
+}
+.current-content-tab {
+  display: block;
+}
+/* optional */
+.content-tab p,
+.content-tab strong {
+    display: block;
+	/* margin: 2rem 0; */
+    /* width: 100%; */
+    max-width: 100%;
+}
+.content-tab ul li,
+.content-tab ol li{
+  list-style-position: inside;
+	/* margin: 1rem 2rem; */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "summary",
+            "type": "text"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "image",
+            "type": "file"
+        },
+        {
+            "name": "friendly",
+            "type": "string"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        }
+    ],
+    "validations": [{
+        "field": "title",
+        "rules": "required|max:256"
+    }, {
+        "field": "enabled",
+        "rules": "required"
+    }, {
+        "field": "image",
+        "rules": "required"
+    }]
+}

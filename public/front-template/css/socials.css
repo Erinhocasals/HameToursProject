@@ -1,0 +1,24 @@
+.ui.comments {
+    max-width: none;
+}
+.block-newsletter__form {
+    width: 100% !important
+}
+.ui.comments .comment .text {
+    font-size: .8em;
+}
+.laravel-like {
+    font-size: 0.8em
+}
+div#social-links {
+    margin: 0 auto;
+    max-width: 500px;
+}
+div#social-links ul li {
+    display: inline-block;
+}
+div#social-links ul li a {
+    padding: 10px;
+    margin: 1px;
+    font-size: 24px;
+}

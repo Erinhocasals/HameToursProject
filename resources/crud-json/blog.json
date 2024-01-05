@@ -1,0 +1,45 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "summary",
+            "type": "text"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "image",
+            "type": "file"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "friendly",
+            "type": "string"
+        },
+        {
+            "name": "author",
+            "type": "string"
+        }
+    ],
+    "validations": [{
+        "field": "title",
+        "rules": "required|max:256"
+    }, {
+        "field": "enabled",
+        "rules": "required"
+    },
+    {
+        "field": "image",
+        "rules": "required"
+    }, {
+        "field": "friendly",
+        "rules": "required"
+    }]
+}

@@ -1,0 +1,31 @@
+{
+    "fields": [
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "status",
+            "type": "integer"
+        },
+        {
+            "name": "price",
+            "type": "decimal"
+        },
+        {
+            "name": "user_id",
+            "type": "integer"
+        }
+    ],
+    "foreign_keys": [{
+        "column": "user_id",
+        "references": "id",
+        "on": "users",
+        "onDelete": "cascade"
+    }],
+    "relationships": [{
+        "name": "user",
+        "type": "belongsTo",
+        "class": "App\\Models\\User"
+    }]
+}

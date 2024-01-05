@@ -1,0 +1,13 @@
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next.disabled {
+    display: list-item;
+    list-style: none;
+}
+
+.page-titles .breadcrumb li.active a {
+    color: #00c8d9;
+}
+
+.page-titles .breadcrumb .breadcrumb-item+.breadcrumb-item:before {
+    color: #00c8d9;
+}

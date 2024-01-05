@@ -1,0 +1,52 @@
+.block-lodge-activity-overview .button-outline,
+.block-lodge-activity-overview .highlighted-example-trip__price-label,
+.block-lodge-activity-overview .highlighted-example-trip__price-value.pricing {
+    color: #000000;
+}
+
+.block-lodge-activity-overview .button-outline:before {
+    border: 1.5px solid #100e0e;
+}
+
+.block-lodge-activity-overview .pricing__suffix {
+    text-decoration: line-through;
+}
+
+.block-lodge-activity-overview .list-highlights__list {
+    padding-top: 2em;
+}
+
+.block-lodge-activity-overview__list-item::after {
+    display: none;
+    margin-top: 3em;
+}
+
+.block-newsletter__background img.responsive-image__img {
+    object-fit: contain;
+}
+
+.block-newsletter__input.full-width {
+    width: 100% !important;
+}
+
+.block-newsletter__input .block-footer__link {
+    font-size: initial;
+}
+
+input::placeholder {
+    font-family: "Basetica Light", sans-serif !important;
+}
+
+.block-newsletter__form {
+    margin-top: 5em !important;
+    padding-bottom: 10em !important;
+    text-align: left;
+}
+
+.page-generic {
+    padding-top: 7.375rem !important;
+}
+
+body {
+    height: 100vh !important;
+}

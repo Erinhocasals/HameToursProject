@@ -1,0 +1,38 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "subtitle",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "image",
+            "type": "file"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "slideable_id",
+            "type": "integer"
+        },
+        {
+            "name": "slideable_type",
+            "type": "string"
+        }
+    ],
+    "validations": [{
+        "field": "title",
+        "rules": "required|max:256"
+    }, {
+        "field": "enabled",
+        "rules": "required"
+    }]
+}

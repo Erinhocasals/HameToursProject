@@ -1,0 +1,7 @@
+%%formFieldsHtml%%
+
+<div class="row">
+    <div class="text-right form-group mt-9">
+        <input class="btn btn-primary" type="submit" value="{{ $formMode === 'edit' ? 'Actualizar' : 'Crear' }}">
+    </div>
+</div>

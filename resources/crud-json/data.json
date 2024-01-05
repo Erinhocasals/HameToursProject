@@ -1,0 +1,23 @@
+{
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "type": "string"
+        }
+    ],
+    "validations": [{
+        "field": "key",
+        "rules": "required|max:256"
+    }, {
+        "field": "value",
+        "rules": "required"
+    }]
+}

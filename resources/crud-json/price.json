@@ -1,0 +1,66 @@
+{
+    "fields": [{
+            "name": "top_line",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "decimal"
+        },
+        {
+            "name": "bottom_line",
+            "type": "string"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "entity_id",
+            "type": "select",
+            "options": {
+                "1": "Technology",
+                "2": "Tips"
+            }
+        },
+        {
+            "name": "country_id",
+            "type": "select",
+            "options": {
+                "1": "Technology",
+                "2": "Tips"
+            }
+        }
+    ],
+    "foreign_keys": [{
+        "column": "entity_id",
+        "references": "id",
+        "on": "entities",
+        "onDelete": "cascade"
+    },
+    {
+        "column": "country_id",
+        "references": "id",
+        "on": "world_countries",
+        "onDelete": "cascade"
+    }],
+    "relationships": [{
+        "name": "entity",
+        "type": "belongsTo",
+        "class": "App\\Models\\Entity"
+    }, {
+        "name": "country",
+        "type": "belongsTo",
+        "class": "App\\Models\\Entity"
+    }],
+    "validations": [{
+        "field": "price",
+        "rules": "required"
+    }, {
+        "field": "enabled",
+        "rules": "required"
+    }, {
+        "field": "entity",
+        "rules": "required"
+    }]
+}

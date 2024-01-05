@@ -1,0 +1,64 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "summary",
+            "type": "text"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "image",
+            "type": "file"
+        },
+        {
+            "name": "latitude",
+            "type": "string"
+        },
+        {
+            "name": "longitude",
+            "type": "string"
+        },
+        {
+            "name": "friendly",
+            "type": "string"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "category_id",
+            "type": "select",
+            "options": {
+                "1": "Technology",
+                "2": "Tips"
+            }
+        }
+    ],
+    "foreign_keys": [{
+        "column": "category_id",
+        "references": "id",
+        "on": "categories",
+        "onDelete": "cascade"
+    }],
+    "relationships": [{
+        "name": "category",
+        "type": "belongsTo",
+        "class": "App\\Models\\Category"
+    }],
+    "validations": [{
+        "field": "name",
+        "rules": "required|max:256"
+    }, {
+        "field": "enabled",
+        "rules": "required"
+    }, {
+        "field": "friendly",
+        "rules": "required"
+    }]
+}

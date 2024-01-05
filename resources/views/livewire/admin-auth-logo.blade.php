@@ -1,0 +1,1 @@
+<img class="w-full" src="{{ asset('front-template/assets/img/logo.png') }}" alt="Hame Logo">

@@ -1,0 +1,64 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "subtitle",
+            "type": "string"
+        },
+        {
+            "name": "svg",
+            "type": "file"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "featured_image",
+            "type": "file"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "friendly",
+            "type": "string"
+        },
+        {
+            "name": "category_id",
+            "type": "select",
+            "options": {
+                "1": "Technology",
+                "2": "Tips"
+            }
+        }
+    ],
+    "foreign_keys": [{
+        "column": "category_id",
+        "references": "id",
+        "on": "categories",
+        "onDelete": "cascade"
+    }],
+    "relationships": [{
+        "name": "parent",
+        "type": "belongsTo",
+        "class": "App\\Models\\Category"
+    }, {
+        "name": "subcategories",
+        "type": "hasMany",
+        "class": "App\\Models\\Category"
+    }],
+    "validations": [{
+        "field": "name",
+        "rules": "required|max:256"
+    }, {
+        "field": "enabled",
+        "rules": "required"
+    }, {
+        "field": "friendly",
+        "rules": "required"
+    }]
+}

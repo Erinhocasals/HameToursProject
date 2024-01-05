@@ -1,0 +1,34 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "logable_id",
+            "type": "integer"
+        },
+        {
+            "name": "logable_type",
+            "type": "string"
+        },
+        {
+            "name": "user_id",
+            "type": "integer"
+        }
+    ],
+    "foreign_keys": [{
+        "column": "user_id",
+        "references": "id",
+        "on": "users",
+        "onDelete": "cascade"
+    }],
+    "relationships": [{
+        "name": "user",
+        "type": "belongsTo",
+        "class": "App\\Models\\User"
+    }]
+}

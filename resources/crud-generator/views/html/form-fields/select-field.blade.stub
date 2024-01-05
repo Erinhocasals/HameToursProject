@@ -1,0 +1,10 @@
+<div class="row align-items-center">
+    <div class="w-full my-1">
+        <select name="%%itemName%%" class="me-sm-2 default-select form-control wide" id="%%itemName%%" %%required%%>
+            <option value="">Seleccione ...</option>
+            @foreach (json_decode('%%options%%', true) as $optionKey => $optionValue)
+                <option value="{{ $optionKey }}" {{ (isset($%%crudNameSingular%%->%%itemName%%) && $%%crudNameSingular%%->%%itemName%% == $optionKey) ? 'selected' : ''}}>{{ $optionValue }}</option>
+            @endforeach
+        </select>
+    </div>
+</div>

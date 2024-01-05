@@ -1,0 +1,61 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "menuable_id",
+            "type": "integer"
+        },
+        {
+            "name": "menuable_type",
+            "type": "string"
+        },
+        {
+            "name": "menu_id",
+            "type": "select",
+            "options": {
+                "1": "Technology",
+                "2": "Tips"
+            }
+        },
+        {
+            "name": "style",
+            "type": "select",
+            "options": {
+                "1": "destination",
+                "2": "menu"
+            }
+        }
+    ],
+    "foreign_keys": [{
+        "column": "menu_id",
+        "references": "id",
+        "on": "menus",
+        "onDelete": "cascade"
+    }],
+    "relationships": [{
+        "name": "parent",
+        "type": "belongsTo",
+        "class": "App\\Models\\Menu"
+    }, {
+        "name": "submenus",
+        "type": "hasMany",
+        "class": "App\\Models\\Menu"
+    }],
+    "validations": [{
+        "field": "title",
+        "rules": "required|max:256"
+    }, {
+        "field": "enabled",
+        "rules": "required"
+    }]
+}

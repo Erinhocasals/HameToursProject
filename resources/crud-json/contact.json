@@ -1,0 +1,30 @@
+{
+    "fields": [{
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "phone",
+            "type": "string"
+        },
+        {
+            "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "message",
+            "type": "boolean"
+        }
+    ],
+    "validations": [{
+        "field": "name",
+        "rules": "required|max:256"
+    }, {
+        "field": "email",
+        "rules": "required"
+    },
+    {
+        "field": "message",
+        "rules": "required"
+    }]
+}

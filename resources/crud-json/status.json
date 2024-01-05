@@ -1,0 +1,23 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "integer"
+        },
+        {
+            "name": "color",
+            "type": "string"
+        },
+        {
+            "name": "category_id",
+            "type": "select",
+            "options": {
+                "1": "Cuba",
+                "2": "Europa"
+            }
+        }
+    ]
+}

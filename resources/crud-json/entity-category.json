@@ -1,0 +1,41 @@
+{
+    "fields": [{
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "subtitle",
+            "type": "string"
+        },
+        {
+            "name": "svg",
+            "type": "file"
+        },
+        {
+            "name": "content",
+            "type": "text"
+        },
+        {
+            "name": "enabled",
+            "type": "boolean"
+        },
+        {
+            "name": "category_id",
+            "type": "select",
+            "options": {
+                "1": "Technology",
+                "2": "Tips"
+            }
+        }
+    ],
+    "validations": [{
+        "field": "name",
+        "rules": "required|max:256"
+    }, {
+        "field": "enabled",
+        "rules": "required"
+    }, {
+        "field": "friendly",
+        "rules": "required"
+    }]
+}
